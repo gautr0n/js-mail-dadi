@@ -37,7 +37,7 @@ const titleDraw = document.createTextNode("il giocatore ha pareggiato")
 
 if (diceResult[0] > diceResult[1]){
     console.log("il giocatore ha vinto");
-    document.getElementById('winnerLoser').append(titleContainer.appendChild(titleWinner));
+    document.getElementById('winnerLoser').appendChild(titleContainer.appendChild(titleWinner));
 } else if (diceResult[0] < diceResult[1]){
     console.log("il giocatore ha perso");
     document.getElementById('winnerLoser').appendChild(titleContainer.appendChild(titleLoser));
